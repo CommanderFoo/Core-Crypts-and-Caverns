@@ -16,6 +16,7 @@ Objects {
   }
   ChildIds: 2252351596957918637
   ChildIds: 17319305791525914897
+  ChildIds: 7636241833740076853
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -28,6 +29,42 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 7636241833740076853
+  Name: "Crypts and Cavens"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  BindingSet {
+    BindingSetAsset {
+      Id: 3087197568142043385
+    }
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
@@ -49,6 +86,7 @@ Objects {
   }
   ParentId: 4781671109827199097
   ChildIds: 16171877512733889444
+  ChildIds: 15808462798981264330
   ChildIds: 3731425807135974585
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -84,29 +122,25 @@ Objects {
     }
   }
   ParentId: 17319305791525914897
-  ChildIds: 14982843161775482339
   NetworkContext {
     Type: Local
   }
 }
 Objects {
-  Id: 14982843161775482339
-  Name: "Floor"
+  Id: 15808462798981264330
+  Name: "Player_Server"
   Transform {
     Location {
-      Z: -50
     }
     Rotation {
     }
     Scale {
-      X: 50
-      Y: 50
+      X: 1
+      Y: 1
       Z: 1
     }
   }
-  ParentId: 3731425807135974585
-  UnregisteredParameters {
-  }
+  ParentId: 17319305791525914897
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -116,19 +150,12 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4912119186672077679
     }
   }
   NetworkRelevanceDistance {
@@ -152,21 +179,33 @@ Objects {
   ParentId: 17319305791525914897
   UnregisteredParameters {
     Overrides {
-      Name: "cs:CubeTile"
-      AssetReference {
-        Id: 7826106690128328543
-      }
-    }
-    Overrides {
       Name: "cs:GeneratedMap"
       ObjectReference {
         SelfId: 3731425807135974585
       }
     }
     Overrides {
+      Name: "cs:Nothing"
+      AssetReference {
+        Id: 2760763764867042501
+      }
+    }
+    Overrides {
       Name: "cs:Floor"
-      ObjectReference {
-        SelfId: 14982843161775482339
+      AssetReference {
+        Id: 17977036931465580763
+      }
+    }
+    Overrides {
+      Name: "cs:Wall"
+      AssetReference {
+        Id: 4110664290547919217
+      }
+    }
+    Overrides {
+      Name: "cs:Roof"
+      AssetReference {
+        Id: 14057744264076208285
       }
     }
   }
@@ -597,7 +636,7 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      Z: 215
+      Z: 3200
     }
     Rotation {
     }

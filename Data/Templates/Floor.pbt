@@ -1,13 +1,13 @@
 Assets {
-  Id: 7826106690128328543
-  Name: "Cube Tile"
+  Id: 17977036931465580763
+  Name: "Floor"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 3897326385379319947
+      RootId: 9474377641911751346
       Objects {
-        Id: 3897326385379319947
-        Name: "Cube Tile"
+        Id: 9474377641911751346
+        Name: "Floor"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,24 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 3731425807135974585
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 4948123311225573401
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.410000026
+              G: 0.410000026
+              B: 0.410000026
+              A: 1
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -25,21 +42,17 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
         CoreMesh {
           MeshAsset {
-            Id: 18305666810967397526
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          InteractWithTriggers: true
           StaticMesh {
             Physics {
-              Mass: 100
-              LinearDamping: 0.01
             }
             BoundsScale: 1
           }
@@ -50,12 +63,21 @@ Assets {
       }
     }
     Assets {
-      Id: 18305666810967397526
-      Name: "Cube - Bottom-Aligned"
+      Id: 12095835209017042614
+      Name: "Cube"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_001"
+        AssetId: "sm_cube_002"
+      }
+    }
+    Assets {
+      Id: 4948123311225573401
+      Name: "Bricks Stone Floor Large 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_brick_stone_floor_large_001"
       }
     }
     PrimaryAssetId {
@@ -64,5 +86,4 @@ Assets {
     }
   }
   SerializationVersion: 107
-  VirtualFolderPath: "CC"
 }

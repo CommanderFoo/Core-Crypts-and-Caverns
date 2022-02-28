@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 500 500"
+	shape-rendering="crispEdges" transform-origin="center">
+	<rect width="100%" height="100%" fill="#F3D899" />
+	<g transform="scale (5 5)">
+		<rect x="14" y="-1" width="72" height="9" stroke-width="0.3" stroke="black" fill="#FFA800" /><text x="50"
+			y="5.5" width="63" font-family="monospace" font-size="5" text-anchor="middle">Outer Prison of Dread</text>
+	</g>
+	<rect x="74" y="74" width="352" height="22" fill="#160F09" />
+	<rect x="74" y="96" width="352" height="22" fill="#160F09" />
+	<rect x="74" y="118" width="352" height="22" fill="#160F09" />
+	<rect x="74" y="140" width="88" height="22" fill="#160F09" />
+	<rect x="206" y="140" width="220" height="22" fill="#160F09" />
+	<rect x="74" y="162" width="88" height="22" fill="#160F09" />
+	<rect x="338" y="162" width="88" height="22" fill="#160F09" />
+	<rect x="74" y="184" width="44" height="22" fill="#160F09" />
+	<rect x="206" y="184" width="110" height="22" fill="#160F09" />
+	<rect x="338" y="184" width="88" height="22" fill="#160F09" />
+	<rect x="74" y="206" width="22" height="22" fill="#160F09" />
+	<rect x="184" y="206" width="132" height="22" fill="#160F09" />
+	<rect x="338" y="206" width="88" height="22" fill="#160F09" />
+	<rect x="74" y="228" width="22" height="22" fill="#160F09" />
+	<rect x="162" y="228" width="154" height="22" fill="#160F09" />
+	<rect x="338" y="228" width="88" height="22" fill="#160F09" />
+	<rect x="74" y="250" width="44" height="22" fill="#160F09" />
+	<rect x="140" y="250" width="176" height="22" fill="#160F09" />
+	<rect x="338" y="250" width="88" height="22" fill="#160F09" />
+	<rect x="74" y="272" width="22" height="22" fill="#160F09" />
+	<rect x="228" y="272" width="66" height="22" fill="#160F09" />
+	<rect x="360" y="272" width="66" height="22" fill="#160F09" />
+	<rect x="74" y="294" width="22" height="22" fill="#160F09" />
+	<rect x="228" y="294" width="66" height="22" fill="#160F09" />
+	<rect x="360" y="294" width="66" height="22" fill="#160F09" />
+	<rect x="74" y="316" width="22" height="22" fill="#160F09" />
+	<rect x="206" y="316" width="88" height="22" fill="#160F09" />
+	<rect x="360" y="316" width="66" height="22" fill="#160F09" />
+	<rect x="74" y="338" width="22" height="22" fill="#160F09" />
+	<rect x="250" y="338" width="176" height="22" fill="#160F09" />
+	<rect x="74" y="360" width="44" height="22" fill="#160F09" />
+	<rect x="250" y="360" width="176" height="22" fill="#160F09" />
+	<rect x="74" y="382" width="352" height="22" fill="#160F09" />
+	<rect x="74" y="404" width="352" height="22" fill="#160F09" />
+	<rect x="206" y="338" width="22" height="22" fill="#00A29D" />
+	<rect x="162" y="272" width="22" height="22" fill="#00A29D" />
+	<rect x="96" y="228" width="22" height="22" fill="#00A29D" />
+</svg>

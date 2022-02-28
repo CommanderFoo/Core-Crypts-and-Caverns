@@ -70,8 +70,14 @@ function Crypts_Cavens_Parser:svg_to_map(svg_data)
 					self.map[row][c] = color
 				end
 			end
+		elseif(item:find("100%%") and not item:find("stroke")) then
+			self.floor_color = item:match("fill=.?#(%w+).?")
 		end
 	end
+end
+
+function Crypts_Cavens_Parser:get_floor_color()
+	return self.floor_color
 end
 
 function Crypts_Cavens_Parser:get_name()

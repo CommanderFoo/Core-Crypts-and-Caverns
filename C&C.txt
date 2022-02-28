@@ -1,0 +1,21 @@
+Genesis adventure
+
+Crypts and cavens threepave
+
+- Book/map on table can be examined
+  - Browse "Crypts and Caverns" maps
+    - C&C data parsing (work from tokenURI return value)
+    - Reconstruct 2D maps
+  - Go on co-op adventure
+    - Prototype space (Forgotten Cisterns + The Sewer)
+    - Prototype gameplay, NPCs + weapons, co-op
+    - Select one appropriate C&C map to start from
+    - ProcGen tileset
+    - ProcGen based on C&C data
+    - Transfer from social space to co-op adventure
+    - Exit back to social space
+    - Select a collection of C&C maps that work with the demo
+
+--https://threepwave.com/cryptsandcaverns
+--https://github.com/threepwave/cryptsandcaverns/blob/main/contract/contracts/dungeons.sol
+--https://opensea.io/collection/crypts-and-caverns

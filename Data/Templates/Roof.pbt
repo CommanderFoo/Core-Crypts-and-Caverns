@@ -1,13 +1,13 @@
 Assets {
-  Id: 7826106690128328543
-  Name: "Cube Tile"
+  Id: 14057744264076208285
+  Name: "Roof"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 3897326385379319947
+      RootId: 12777969366176751411
       Objects {
-        Id: 3897326385379319947
-        Name: "Cube Tile"
+        Id: 12777969366176751411
+        Name: "Roof"
         Transform {
           Scale {
             X: 1
@@ -16,8 +16,16 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 4948123311225573401
+            }
+          }
+        }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -30,7 +38,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18305666810967397526
+            Id: 10884521615917272732
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -50,12 +58,21 @@ Assets {
       }
     }
     Assets {
-      Id: 18305666810967397526
-      Name: "Cube - Bottom-Aligned"
+      Id: 10884521615917272732
+      Name: "Plane 1m - One Sided"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_001"
+        AssetId: "sm_plane_1m_001"
+      }
+    }
+    Assets {
+      Id: 4948123311225573401
+      Name: "Bricks Stone Floor Large 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_brick_stone_floor_large_001"
       }
     }
     PrimaryAssetId {
@@ -64,5 +81,4 @@ Assets {
     }
   }
   SerializationVersion: 107
-  VirtualFolderPath: "CC"
 }

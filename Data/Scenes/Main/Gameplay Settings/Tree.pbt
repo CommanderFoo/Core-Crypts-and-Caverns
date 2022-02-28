@@ -162,8 +162,8 @@ Objects {
       MaxSwimSpeed: 420
       Buoyancy: 1
       TouchForceFactor: 1
-      BrakingDecelerationFlying: 600
-      MaxFlightSpeed: 600
+      BrakingDecelerationFlying: 1600
+      MaxFlightSpeed: 1600
       MovementControlMode {
         Value: "mc:emovementcontrolmode:lookrelative"
       }
