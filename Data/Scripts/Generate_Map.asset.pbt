@@ -5,13 +5,13 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:Crypts_Cavens_Parser"
+        Name: "cs:Crypts_Caverns_Parser"
         AssetReference {
           Id: 2525286673357166650
         }
       }
       Overrides {
-        Name: "cs:CryptsAndCavens"
+        Name: "cs:CryptsAndCaverns"
         AssetReference {
           Id: 2812001188200802284
         }

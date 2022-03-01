@@ -1,5 +1,5 @@
-local MAPS = require(script:GetCustomProperty("CryptsAndCavens"))
-local Crypts_Cavens_Parser = require(script:GetCustomProperty("Crypts_Cavens_Parser"))
+local MAPS = require(script:GetCustomProperty("CryptsAndCaverns"))
+local Crypts_Caverns_Parser = require(script:GetCustomProperty("Crypts_Caverns_Parser"))
 
 local GENERATED_MAP = script:GetCustomProperty("GeneratedMap"):WaitForObject()
 local FLOOR = script:GetCustomProperty("Floor")
@@ -38,7 +38,7 @@ local function clear_objs()
 end
 
 local function generate()
-	local parser = Crypts_Cavens_Parser:new(MAPS[math.random(#MAPS)].metadata)
+	local parser = Crypts_Caverns_Parser:new(MAPS[math.random(#MAPS)].metadata)
 	local map_2d = parser:get_map()
 
 	parser:print()
@@ -47,7 +47,7 @@ local function generate()
 
 	local totals = {}
 
-	local tile_size = 400
+	local tile_size = 1000
 	local width = tile_size * #map_2d
 	local height = tile_size * #map_2d[1]
 	local offset = width / 2

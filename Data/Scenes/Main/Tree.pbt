@@ -36,7 +36,7 @@ Objects {
 }
 Objects {
   Id: 7636241833740076853
-  Name: "Crypts and Cavens"
+  Name: "Crypts and Caverns"
   Transform {
     Location {
     }
@@ -72,7 +72,7 @@ Objects {
 }
 Objects {
   Id: 17319305791525914897
-  Name: "Crypts and Cavens"
+  Name: "Crypts and Caverns"
   Transform {
     Location {
     }

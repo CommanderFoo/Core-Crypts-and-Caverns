@@ -1,19 +1,19 @@
 local BASE_64 = require(script:GetCustomProperty("Base64"))
 local JSON = require(script:GetCustomProperty("JSON"))
 
-local Crypts_Cavens_Parser = {}
+local Crypts_Caverns_Parser = {}
 
-function Crypts_Cavens_Parser:base64_to_metadata()
+function Crypts_Caverns_Parser:base64_to_metadata()
 	return JSON.decode(BASE_64.decode(self.token_data))
 end
 
-function Crypts_Cavens_Parser:base64_to_svg()
+function Crypts_Caverns_Parser:base64_to_svg()
 	local start_pos, end_pos = string.find(self.meta_data.image, "base64,", 1, true)
 
 	return BASE_64.decode(string.sub(self.meta_data.image, end_pos + 1))
 end
 
-function Crypts_Cavens_Parser:create_map(size)
+function Crypts_Caverns_Parser:create_map(size)
 	self.map = {}
 
 	for c = 1, size do
@@ -27,7 +27,7 @@ function Crypts_Cavens_Parser:create_map(size)
 	end
 end
 
-function Crypts_Cavens_Parser:print()
+function Crypts_Caverns_Parser:print()
 	local str = ""
 
 	for r = 1, #self.map do
@@ -43,11 +43,12 @@ function Crypts_Cavens_Parser:print()
 	print(str)
 end
 
-function Crypts_Cavens_Parser:get_map(as_string)
+function Crypts_Caverns_Parser:get_map(as_string)
 	return as_string and JSON.encode(self.map) or self.map
 end
 
-function Crypts_Cavens_Parser:svg_to_map(svg_data)
+function Crypts_Caverns_Parser:svg_to_map(svg_data)
+	print(svg_data)
 	for item in svg_data:gmatch("(<rect.-.-/>)") do
 		if(not item:find("100%%") and not item:find("stroke")) then
 			local x = item:match("x=.?(%d+).?")
@@ -76,35 +77,35 @@ function Crypts_Cavens_Parser:svg_to_map(svg_data)
 	end
 end
 
-function Crypts_Cavens_Parser:get_floor_color()
+function Crypts_Caverns_Parser:get_floor_color()
 	return self.floor_color
 end
 
-function Crypts_Cavens_Parser:get_name()
+function Crypts_Caverns_Parser:get_name()
 	return self.meta_data.name
 end
 
-function Crypts_Cavens_Parser:get_description()
+function Crypts_Caverns_Parser:get_description()
 	return self.meta_data.description
 end
 
-function Crypts_Cavens_Parser:get_attributes(as_string)
+function Crypts_Caverns_Parser:get_attributes(as_string)
 	return as_string and JSON.encode(self.meta_data.attributes) or self.meta_data.attributes
 end
 
-function Crypts_Cavens_Parser:get_svg_data(as_string)
+function Crypts_Caverns_Parser:get_svg_data(as_string)
 	return as_string and JSON.encode(self.svg_data) or self.svg_data
 end
 
-function Crypts_Cavens_Parser:get_token_data(as_string)
+function Crypts_Caverns_Parser:get_token_data(as_string)
 	return as_string and JSON.encode(self.token_data) or self.token_data
 end
 
-function Crypts_Cavens_Parser:get_meta_data(as_string)
+function Crypts_Caverns_Parser:get_meta_data(as_string)
 	return as_string and JSON.encode(self.meta_data) or self.meta_data
 end
 
-function Crypts_Cavens_Parser:new(map_data)
+function Crypts_Caverns_Parser:new(map_data)
 	self.__index = self
 
 	local m_table = setmetatable({}, self)
@@ -120,4 +121,4 @@ function Crypts_Cavens_Parser:new(map_data)
 	return m_table
 end
 
-return Crypts_Cavens_Parser
+return Crypts_Caverns_Parser
