@@ -185,27 +185,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:Nothing"
+      Name: "cs:Tiles"
       AssetReference {
-        Id: 2760763764867042501
-      }
-    }
-    Overrides {
-      Name: "cs:Floor"
-      AssetReference {
-        Id: 17977036931465580763
-      }
-    }
-    Overrides {
-      Name: "cs:Wall"
-      AssetReference {
-        Id: 4110664290547919217
-      }
-    }
-    Overrides {
-      Name: "cs:Roof"
-      AssetReference {
-        Id: 14057744264076208285
+        Id: 16734737795173096483
       }
     }
   }

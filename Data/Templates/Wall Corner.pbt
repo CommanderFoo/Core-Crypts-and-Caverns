@@ -1,13 +1,13 @@
 Assets {
-  Id: 2760763764867042501
-  Name: "Nothing"
+  Id: 14208968589628347860
+  Name: "Wall Corner"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 1844443602529601637
+      RootId: 15167870183985116468
       Objects {
-        Id: 1844443602529601637
-        Name: "Nothing"
+        Id: 15167870183985116468
+        Name: "Wall Corner"
         Transform {
           Scale {
             X: 1
@@ -16,11 +16,49 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
+        ChildIds: 15689835581608425975
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 15689835581608425975
+        Name: "Wall"
+        Transform {
+          Location {
+            X: 50
+            Y: -50
+          }
+          Rotation {
+            Yaw: -90
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15167870183985116468
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4495886874010708023
+              Id: 4948123311225573401
             }
           }
           Overrides {
@@ -56,6 +94,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
+              R: 0.410000026
+              G: 0.410000026
+              B: 0.410000026
               A: 1
             }
           }
@@ -74,7 +115,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18305666810967397526
+            Id: 3636073229507779277
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -88,27 +129,25 @@ Assets {
             BoundsScale: 1
           }
         }
+        InstanceHistory {
+          SelfId: 8241743239524918775
+          SubobjectId: 15538624157611500042
+          InstanceId: 6152066614465709463
+          TemplateId: 4110664290547919217
+          WasRoot: true
+        }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
       }
     }
     Assets {
-      Id: 18305666810967397526
-      Name: "Cube - Bottom-Aligned"
+      Id: 3636073229507779277
+      Name: "Ellipsoid - Truncated Wedge"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_001"
-      }
-    }
-    Assets {
-      Id: 4495886874010708023
-      Name: "Plastic Matte"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "plastic_matte_001"
+        AssetId: "sm_ellipsoid_truncated_wedge_001"
       }
     }
     Assets {

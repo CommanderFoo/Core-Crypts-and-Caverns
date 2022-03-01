@@ -48,7 +48,6 @@ function Crypts_Caverns_Parser:get_map(as_string)
 end
 
 function Crypts_Caverns_Parser:svg_to_map(svg_data)
-	print(svg_data)
 	for item in svg_data:gmatch("(<rect.-.-/>)") do
 		if(not item:find("100%%") and not item:find("stroke")) then
 			local x = item:match("x=.?(%d+).?")
