@@ -27,6 +27,7 @@ Objects {
   ChildIds: 16366905932095584096
   ChildIds: 11144197887551552793
   ChildIds: 11172623884911440392
+  ChildIds: 14219168884654026843
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -45,6 +46,45 @@ Objects {
   }
 }
 Objects {
+  Id: 14219168884654026843
+  Name: "Torch"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4802320173889178830
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 575.673218
+            Y: -10.1252604
+            Z: 2.28881836e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7933574334353332278
+    }
+  }
+}
+Objects {
   Id: 11172623884911440392
   Name: "Wall - Corner"
   Transform {
@@ -55,6 +95,12 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 17459752530522542518
@@ -366,6 +412,12 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 1531286927984918526
@@ -380,6 +432,11 @@ Objects {
             X: 579.072205
             Y: -83.0445633
             Z: 2.28881836e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
           }
         }
       }

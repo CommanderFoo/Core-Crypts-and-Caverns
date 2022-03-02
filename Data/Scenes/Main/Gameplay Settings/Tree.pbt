@@ -162,8 +162,8 @@ Objects {
       MaxSwimSpeed: 420
       Buoyancy: 1
       TouchForceFactor: 1
-      BrakingDecelerationFlying: 1600
-      MaxFlightSpeed: 1600
+      BrakingDecelerationFlying: 2600
+      MaxFlightSpeed: 2600
       MovementControlMode {
         Value: "mc:emovementcontrolmode:lookrelative"
       }
@@ -276,6 +276,7 @@ Objects {
     IsDefault: true
     GameSettings {
       RagdollOnDeath: true
+      EnablePlayerStorage: true
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }

@@ -17,6 +17,8 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 13990326784506496318
+        ChildIds: 2148073242355887197
+        ChildIds: 114892834013445316
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -140,6 +142,102 @@ Assets {
         }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 2148073242355887197
+        Name: "Torch"
+        Transform {
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1531286927984918526
+        TemplateInstance {
+          ParameterOverrideMap {
+            key: 4802320173889178830
+            value {
+              Overrides {
+                Name: "Name"
+                String: "Torch"
+              }
+              Overrides {
+                Name: "Scale"
+                Vector {
+                  X: 1
+                  Y: 1
+                  Z: 1
+                }
+              }
+              Overrides {
+                Name: "Position"
+                Vector {
+                  X: -38.8776245
+                  Y: -35.2245483
+                }
+              }
+            }
+          }
+          TemplateAsset {
+            Id: 7933574334353332278
+          }
+        }
+      }
+      Objects {
+        Id: 114892834013445316
+        Name: "Torch"
+        Transform {
+          Location {
+            X: 540.702271
+            Y: -118.12632
+            Z: 2.28881836e-05
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1531286927984918526
+        TemplateInstance {
+          ParameterOverrideMap {
+            key: 4802320173889178830
+            value {
+              Overrides {
+                Name: "Name"
+                String: "Torch"
+              }
+              Overrides {
+                Name: "Scale"
+                Vector {
+                  X: 1
+                  Y: 1
+                  Z: 1
+                }
+              }
+              Overrides {
+                Name: "Position"
+                Vector {
+                  X: 37.2478638
+                  Y: 36.1847229
+                  Z: 3.81469727e-06
+                }
+              }
+              Overrides {
+                Name: "Rotation"
+                Rotator {
+                  Yaw: 180
+                }
+              }
+            }
+          }
+          TemplateAsset {
+            Id: 7933574334353332278
+          }
         }
       }
     }
