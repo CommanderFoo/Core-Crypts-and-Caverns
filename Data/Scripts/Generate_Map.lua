@@ -44,14 +44,14 @@ local function clear_objs()
 	objs = {}
 end
 
-local function generate()	
+local function generate()
 	DATA:SetCustomProperty("progress_grid", 0)
 	DATA:SetCustomProperty("progress_mesh", 0)
 
 	local index = math.random(#MAPS)
-	
-	current_map = MAPS[4]
-	
+
+	current_map = MAPS[index]
+
 	print("NFT ID:", current_map.map_id, "Index:", index)
 
 	local parser = Crypts_Caverns_Parser:new(current_map.metadata)
@@ -68,7 +68,7 @@ local function generate()
 	local offset = width / 2
 
 	local opts = {
-		
+
 		parent = GENERATED_MAP,
 		networkContext = NetworkContextType.LOCAL_CONTEXT,
 		scale = Vector3.New(width / 100, width / 100, 1)
@@ -80,7 +80,7 @@ local function generate()
 	opts.rotation = Rotation.New(180, 0, 0)
 	opts.position = Vector3.New(0, 0, tile_size - 10)
 
-	--local roof = World.SpawnAsset(TILES["roof"].asset, opts)
+	local roof = World.SpawnAsset(TILES["roof"].asset, opts)
 
 	--floor:SetColor(Color.FromStandardHex(parser:get_floor_color()))
 	--roof:SetColor(Color.FromStandardHex(parser:get_floor_color()))
@@ -88,7 +88,7 @@ local function generate()
 	NAV_MESH_AREA:SetWorldScale(opts.scale + (Vector3.UP * 1))
 	NAV_MESH_AREA:SetWorldPosition(floor:GetWorldPosition())
 	table.insert(objs, floor)
-	--table.insert(objs, roof)
+	table.insert(objs, roof)
 
 	for row = 1, #map_2d do
 		for column = 1, #map_2d[1] do
@@ -136,27 +136,27 @@ local function generate()
 				local parent = GENERATED_MAP
 				local context = NetworkContextType.LOCAL_CONTEXT
 
-				local tile = World.SpawnAsset(tile_asset.asset, { 
-					
-					parent = parent, 
-					networkContext = context, 
+				local tile = World.SpawnAsset(tile_asset.asset, {
+
+					parent = parent,
+					networkContext = context,
 					position = Vector3.New(-(tile_size * row - offset), tile_size * column - offset, z_offset),
 					scale = Vector3.New(tile_size / 100, tile_size / 100, tile_size / 100),
 					rotation = rotation
-				
+
 				})
 
 				table.insert(objs, tile)
 
 				if(spawn_loot) then
-					local loot = World.SpawnAsset(ASSETS["loot chest"].asset, { 
-					
-						parent = parent, 
-						networkContext = context, 
+					local loot = World.SpawnAsset(ASSETS["loot chest"].asset, {
+
+						parent = parent,
+						networkContext = context,
 						position = tile:GetWorldPosition() * Vector3.New(1, 1, 0) + (tile:GetWorldTransform():GetForwardVector() * -50) + (Vector3.UP * 50),
 						rotation = tile:GetChildren()[1]:GetWorldRotation(),
 						scale = Vector3.New(2, 2, 2)
-					
+
 					})
 
 					table.insert(objs, loot)
@@ -167,7 +167,7 @@ local function generate()
 		Task.Wait()
 	end
 
-	--Events.Broadcast("generate_navmesh")
+	Events.Broadcast("generate_navmesh")
 
 	for index, player in ipairs(Game.GetPlayers()) do
 		player:Spawn({ rotation = current_map.player_rotation, position = current_map.player_position })

@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 11492467594234639244
+        ParentId: 4781671109827199097
         ChildIds: 12714518008667359315
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -57,6 +57,7 @@ Assets {
         ParentId: 4802320173889178830
         ChildIds: 17115675958723062273
         ChildIds: 16144107479775858471
+        ChildIds: 9975526408905874338
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -179,7 +180,7 @@ Assets {
           Light {
             Temperature: 6500
             LocalLight {
-              AttenuationRadius: 1547.2699
+              AttenuationRadius: 1547.27
               PointLight {
                 SoftSourceRadius: 145.035355
                 FallOffExponent: 8
@@ -188,6 +189,50 @@ Assets {
             }
             MaxDrawDistance: 10000
             MaxDistanceFadeRange: 1000
+          }
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 9975526408905874338
+        Name: "Torch_Flicker_Client"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12714518008667359315
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:PointLight"
+            ObjectReference {
+              SubObjectId: 16144107479775858471
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 16122476870713015785
           }
         }
         NetworkRelevanceDistance {

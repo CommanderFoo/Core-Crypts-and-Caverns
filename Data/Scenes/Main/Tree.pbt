@@ -991,11 +991,11 @@ Objects {
         }
         Overrides {
           Name: "cs:Debug"
-          Bool: false
+          Bool: true
         }
         Overrides {
           Name: "cs:VerboseDebug"
-          Bool: false
+          Bool: true
         }
         Overrides {
           Name: "cs:DefaultPathSearchArea"
@@ -1053,8 +1053,8 @@ Objects {
         Overrides {
           Name: "cs:TileSize"
           Vector {
-            X: 100
-            Y: 100
+            X: 300
+            Y: 300
             Z: 300
           }
         }
@@ -1153,6 +1153,18 @@ Objects {
   ParentId: 10005074784157121906
   TemplateInstance {
     ParameterOverrideMap {
+      key: 8768135237325925539
+      value {
+        Overrides {
+          Name: "bp:Color"
+          Color {
+            R: 0.0100001097
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 13664821734768608629
       value {
         Overrides {
@@ -1170,6 +1182,15 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 14977169413056414029
+      value {
+        Overrides {
+          Name: "bp:Intensity"
+          Float: 1.23418033
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16180970171577782523
       value {
         Overrides {
@@ -1178,7 +1199,7 @@ Objects {
         }
         Overrides {
           Name: "bp:Intensity"
-          Float: 2.93654275
+          Float: 1.01879025
         }
       }
     }
