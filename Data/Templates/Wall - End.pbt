@@ -1,13 +1,13 @@
 Assets {
-  Id: 18266757125565787533
-  Name: "Wall_D"
+  Id: 983589208865867640
+  Name: "Wall - End"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 3668796139135659127
+      RootId: 3256503662262213641
       Objects {
-        Id: 3668796139135659127
-        Name: "Wall_D"
+        Id: 3256503662262213641
+        Name: "Wall - Basic"
         Transform {
           Scale {
             X: 1
@@ -15,8 +15,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5886969642805812115
-        ChildIds: 18206860333997282864
+        ParentId: 4781671109827199097
+        ChildIds: 10222115473677327988
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -26,6 +26,9 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         Folder {
           IsGroup: true
         }
@@ -34,58 +37,36 @@ Assets {
         }
       }
       Objects {
-        Id: 18206860333997282864
-        Name: "Cube - Arcade 04"
+        Id: 10222115473677327988
+        Name: "Fantasy Castle Pillar 01 Mid"
         Transform {
           Location {
+            Y: 10
           }
           Rotation {
           }
           Scale {
-            X: 6.4527545
-            Y: 0.715650558
-            Z: 6.85278606
+            X: 0.84996736
+            Y: 0.84996736
+            Z: 0.688041031
           }
         }
-        ParentId: 3668796139135659127
+        ParentId: 3256503662262213641
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
+            Name: "ma:Shared_Trim2:id"
             AssetReference {
               Id: 4948123311225573401
             }
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: true
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 11956839943561510371
+            Name: "ma:Shared_Trim2:color"
+            Color {
+              R: 0.410000026
+              G: 0.410000026
+              B: 0.410000026
+              A: 1
             }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:id"
-            AssetReference {
-              Id: 11956839943561510371
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:smart"
-            Bool: true
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 1.54259777
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1.54259777
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -97,22 +78,34 @@ Assets {
             }
           }
           Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.410000026
-              G: 0.410000026
-              B: 0.410000026
-              A: 1
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 4948123311225573401
             }
           }
           Overrides {
-            Name: "ma:Shared_Trim:color"
-            Color {
-              R: 0.410000026
-              G: 0.410000026
-              B: 0.410000026
-              A: 1
-            }
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 4
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 4
+          }
+          Overrides {
+            Name: "ma:Shared_Trim2:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_Trim2:utile"
+            Float: 3
+          }
+          Overrides {
+            Name: "ma:Shared_Trim2:vtile"
+            Float: 3
           }
         }
         Collidable_v2 {
@@ -124,15 +117,17 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
         CoreMesh {
           MeshAsset {
-            Id: 14464206855166663931
+            Id: 13735879028141949313
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          DisableReceiveDecals: true
           StaticMesh {
             Physics {
               Mass: 100
@@ -147,12 +142,12 @@ Assets {
       }
     }
     Assets {
-      Id: 14464206855166663931
-      Name: "Cube - Arcade 04"
+      Id: 13735879028141949313
+      Name: "Main Street Pillar 02 Top"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_arcade_cube_004"
+        AssetId: "sm_ts_urb_dtn_mst_pillar_002_top_ref"
       }
     }
     Assets {
@@ -164,20 +159,10 @@ Assets {
         AssetId: "mi_brick_stone_floor_large_001"
       }
     }
-    Assets {
-      Id: 11956839943561510371
-      Name: "Bricks Stone Block 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_bricks_stone_block_001"
-      }
-    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
   SerializationVersion: 107
-  VirtualFolderPath: "CC"
 }

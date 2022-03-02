@@ -1,13 +1,13 @@
 Assets {
-  Id: 14208968589628347860
-  Name: "Wall Corner"
+  Id: 15488239683906504240
+  Name: "Wall - Basic"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 15167870183985116468
+      RootId: 10805469051947475789
       Objects {
-        Id: 15167870183985116468
-        Name: "Wall Corner"
+        Id: 10805469051947475789
+        Name: "Basic Wall"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 15689835581608425975
+        ChildIds: 4797219352062957965
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -37,15 +37,12 @@ Assets {
         }
       }
       Objects {
-        Id: 15689835581608425975
+        Id: 4797219352062957965
         Name: "Wall"
         Transform {
           Location {
-            X: 50
-            Y: -50
           }
           Rotation {
-            Yaw: -90
           }
           Scale {
             X: 1
@@ -53,7 +50,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 15167870183985116468
+        ParentId: 10805469051947475789
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -115,7 +112,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 3636073229507779277
+            Id: 14464206855166663931
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -129,25 +126,18 @@ Assets {
             BoundsScale: 1
           }
         }
-        InstanceHistory {
-          SelfId: 8241743239524918775
-          SubobjectId: 15538624157611500042
-          InstanceId: 6152066614465709463
-          TemplateId: 4110664290547919217
-          WasRoot: true
-        }
         NetworkRelevanceDistance {
           Value: "mc:eproxyrelevance:critical"
         }
       }
     }
     Assets {
-      Id: 3636073229507779277
-      Name: "Ellipsoid - Truncated Wedge"
+      Id: 14464206855166663931
+      Name: "Cube - Arcade 04"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ellipsoid_truncated_wedge_001"
+        AssetId: "sm_arcade_cube_004"
       }
     }
     Assets {

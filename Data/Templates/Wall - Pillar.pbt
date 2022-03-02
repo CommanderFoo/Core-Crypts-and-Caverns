@@ -1,13 +1,13 @@
 Assets {
-  Id: 4110664290547919217
-  Name: "Wall"
+  Id: 9842710584401371534
+  Name: "Wall - Pillar"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 15538624157611500042
+      RootId: 1531286927984918526
       Objects {
-        Id: 15538624157611500042
-        Name: "Wall A"
+        Id: 1531286927984918526
+        Name: "Wall - Pillar"
         Transform {
           Scale {
             X: 1
@@ -16,6 +16,41 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
+        ChildIds: 13990326784506496318
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 13990326784506496318
+        Name: "Wall"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1.00727522
+          }
+        }
+        ParentId: 1531286927984918526
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -62,6 +97,18 @@ Assets {
               A: 1
             }
           }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 4
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 4
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -77,7 +124,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18305666810967397526
+            Id: 6720504417188550187
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -97,12 +144,12 @@ Assets {
       }
     }
     Assets {
-      Id: 18305666810967397526
-      Name: "Cube - Bottom-Aligned"
+      Id: 6720504417188550187
+      Name: "Column Segment 1m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_001"
+        AssetId: "sm_column_segment_001"
       }
     }
     Assets {
