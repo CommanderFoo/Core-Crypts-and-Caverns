@@ -104,7 +104,16 @@ local function generate()
 				if(neighbours.NORTH == "-" and neighbours.NORTH_EAST == "-" and neighbours.EAST == "-" and neighbours.SOUTH == "-" and neighbours.SOUTH_WEST == "-" and neighbours.WEST == "-") then
 					tile_asset = TILES["wall pillar"]
 				elseif(neighbours.NORTH == "-" and neighbours.NORTH_EAST == "-" and neighbours.EAST == "-") then
-					--tile_asset = TILES["wall end"]
+					tile_asset = TILES["wall end"]
+				elseif(neighbours.SOUTH == "-" and neighbours.SOUTH_EAST == "-" and neighbours.EAST == "-") then
+					tile_asset = TILES["wall end"]
+					rotation.z = 90
+				elseif(neighbours.SOUTH == "-" and neighbours.SOUTH_WEST == "-" and neighbours.WEST == "-") then
+					tile_asset = TILES["wall end"]
+					rotation.z = 180
+				elseif(neighbours.NORTH == "-" and neighbours.NORTH_WEST == "-" and neighbours.WEST == "-") then
+					tile_asset = TILES["wall end"]
+					rotation.z = -90
 				end
 			else
 				if(neighbours.NORTH ~= nil and neighbours.SOUTH ~= nil and neighbours.WEST ~= nil and neighbours.EAST ~= nil) then
@@ -167,10 +176,10 @@ local function generate()
 		Task.Wait()
 	end
 
-	Events.Broadcast("generate_navmesh")
+	--Events.Broadcast("generate_navmesh")
 
 	for index, player in ipairs(Game.GetPlayers()) do
-		player:Spawn({ rotation = current_map.player_rotation, position = current_map.player_position })
+		--player:Spawn({ rotation = current_map.player_rotation, position = current_map.player_position })
 	end
 end
 

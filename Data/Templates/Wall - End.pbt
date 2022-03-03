@@ -7,7 +7,7 @@ Assets {
       RootId: 3256503662262213641
       Objects {
         Id: 3256503662262213641
-        Name: "Wall - Basic"
+        Name: "Wall - End"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 10222115473677327988
+        ChildIds: 1071854379946062102
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -37,46 +37,22 @@ Assets {
         }
       }
       Objects {
-        Id: 10222115473677327988
-        Name: "Fantasy Castle Pillar 01 Mid"
+        Id: 1071854379946062102
+        Name: "Cube:Cylinder Waisted"
         Transform {
           Location {
-            Y: 10
+            Z: 50.3510895
           }
           Rotation {
           }
           Scale {
-            X: 0.84996736
-            Y: 0.84996736
-            Z: 0.688041031
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 3256503662262213641
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_Trim2:id"
-            AssetReference {
-              Id: 4948123311225573401
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim2:color"
-            Color {
-              R: 0.410000026
-              G: 0.410000026
-              B: 0.410000026
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.410000026
-              G: 0.410000026
-              B: 0.410000026
-              A: 1
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
@@ -84,28 +60,13 @@ Assets {
             }
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 4
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 4
-          }
-          Overrides {
-            Name: "ma:Shared_Trim2:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_Trim2:utile"
-            Float: 3
-          }
-          Overrides {
-            Name: "ma:Shared_Trim2:vtile"
-            Float: 3
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.355208397
+              G: 0.355208397
+              B: 0.355208397
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -122,7 +83,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 13735879028141949313
+            Id: 2650027833835979416
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -142,12 +103,12 @@ Assets {
       }
     }
     Assets {
-      Id: 13735879028141949313
-      Name: "Main Street Pillar 02 Top"
+      Id: 2650027833835979416
+      Name: "Cube:Cylinder Waisted"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_ts_urb_dtn_mst_pillar_002_top_ref"
+        AssetId: "sm_prim_cylinder_cube_waisted_001_ref"
       }
     }
     Assets {

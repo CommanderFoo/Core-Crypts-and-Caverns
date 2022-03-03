@@ -882,6 +882,7 @@ Objects {
       RespawnMode_v2 {
         Value: "mc:erespawnmode:random"
       }
+      StartSpawned: true
       SpawnMode {
         Value: "mc:espawnmode:random"
       }
@@ -1053,8 +1054,8 @@ Objects {
         Overrides {
           Name: "cs:TileSize"
           Vector {
-            X: 300
-            Y: 300
+            X: 100
+            Y: 100
             Z: 300
           }
         }
@@ -1186,7 +1187,7 @@ Objects {
       value {
         Overrides {
           Name: "bp:Intensity"
-          Float: 1.23418033
+          Float: 4.27412319
         }
       }
     }
