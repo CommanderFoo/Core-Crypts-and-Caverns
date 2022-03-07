@@ -18,17 +18,8 @@ Objects {
   ChildIds: 16813558807825262224
   ChildIds: 10005074784157121906
   ChildIds: 14982843161775482339
-  ChildIds: 299188967157960644
-  ChildIds: 15137726871740237180
-  ChildIds: 2743136588432639909
-  ChildIds: 14626918698300918129
-  ChildIds: 11838635220006765492
-  ChildIds: 17495580984171107852
-  ChildIds: 16366905932095584096
-  ChildIds: 11144197887551552793
-  ChildIds: 11172623884911440392
-  ChildIds: 14219168884654026843
-  ChildIds: 2728015084602983506
+  ChildIds: 16426132107529572286
+  ChildIds: 6865566251749465549
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -47,96 +38,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2728015084602983506
-  Name: "Cube - Arcade 04"
-  Transform {
-    Location {
-      X: -94.3654404
-      Y: 117.037109
-      Z: -2.28881836e-05
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14464206855166663931
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 14219168884654026843
-  Name: "Torch"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 4802320173889178830
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Torch"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 575.673218
-            Y: -10.1252604
-            Z: 2.28881836e-05
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 7933574334353332278
-    }
-  }
-}
-Objects {
-  Id: 11172623884911440392
+  Id: 6865566251749465549
   Name: "Wall - Corner"
   Transform {
     Scale {
@@ -146,15 +48,9 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 17459752530522542518
+      key: 3898565346002265107
       value {
         Overrides {
           Name: "Name"
@@ -166,29 +62,17 @@ Objects {
             X: 300
           }
         }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 180
-          }
-        }
       }
     }
     TemplateAsset {
-      Id: 4332826205260186408
+      Id: 11872221153804735165
     }
   }
 }
 Objects {
-  Id: 11144197887551552793
+  Id: 16426132107529572286
   Name: "Wall - Basic"
   Transform {
-    Location {
-      X: 300
-      Y: -100
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -208,348 +92,12 @@ Objects {
           Name: "Position"
           Vector {
             X: 400
-            Y: -100
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
     }
     TemplateAsset {
       Id: 15488239683906504240
-    }
-  }
-}
-Objects {
-  Id: 16366905932095584096
-  Name: "Wall - Basic"
-  Transform {
-    Location {
-      X: 200
-      Y: -100
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 10805469051947475789
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Wall - Basic"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 300
-            Y: -100
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15488239683906504240
-    }
-  }
-}
-Objects {
-  Id: 17495580984171107852
-  Name: "Wall - Basic"
-  Transform {
-    Location {
-      X: 200
-      Y: -200
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 10805469051947475789
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Wall - Basic"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 200
-            Y: -100
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15488239683906504240
-    }
-  }
-}
-Objects {
-  Id: 11838635220006765492
-  Name: "Wall - Basic"
-  Transform {
-    Location {
-      X: 100
-      Y: -200
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 10805469051947475789
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Wall - Basic"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 200
-            Y: -200
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15488239683906504240
-    }
-  }
-}
-Objects {
-  Id: 14626918698300918129
-  Name: "Wall - End"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3256503662262213641
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Wall - End"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 200
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 983589208865867640
-    }
-  }
-}
-Objects {
-  Id: 2743136588432639909
-  Name: "Wall - Basic"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 10805469051947475789
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Wall - Basic"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 100
-            Y: -200
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15488239683906504240
-    }
-  }
-}
-Objects {
-  Id: 15137726871740237180
-  Name: "Wall - Pillar"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1531286927984918526
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Wall - Pillar"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 579.072205
-            Y: -83.0445633
-            Z: 2.28881836e-05
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9842710584401371534
-    }
-  }
-}
-Objects {
-  Id: 299188967157960644
-  Name: "Wall - Corner"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 17459752530522542518
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Wall - Corner"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -197.41925
-            Y: -119.562584
-            Z: 2.28881836e-05
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4332826205260186408
     }
   }
 }

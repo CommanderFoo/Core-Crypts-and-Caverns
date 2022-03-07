@@ -15,10 +15,12 @@ Objects {
     }
   }
   ChildIds: 2252351596957918637
+  ChildIds: 6006621977313898088
+  ChildIds: 8641672724503937371
+  ChildIds: 13697059293714550192
   ChildIds: 17319305791525914897
-  ChildIds: 11835868879486743133
   ChildIds: 993158901985119449
-  ChildIds: 12255376015252051636
+  ChildIds: 18440605552572557453
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,13 +39,9 @@ Objects {
   }
 }
 Objects {
-  Id: 12255376015252051636
-  Name: "Enemies"
+  Id: 18440605552572557453
+  Name: "Health Bar"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -51,23 +49,19 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsGroup: true
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1675656989204002660
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Health Bar"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10076558735560667296
+    }
   }
 }
 Objects {
@@ -388,117 +382,6 @@ Objects {
   }
 }
 Objects {
-  Id: 11835868879486743133
-  Name: "Post Process"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 16966340303514794983
-  ChildIds: 14022464183113634984
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  NetworkContext {
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 14022464183113634984
-  Name: "Advanced Bloom Post Process"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11835868879486743133
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 6403628407830071757
-    }
-    TeamSettings {
-    }
-  }
-}
-Objects {
-  Id: 16966340303514794983
-  Name: "Ambient Occlusion Post Process"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11835868879486743133
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Intensity"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 14697405062555329113
-    }
-    TeamSettings {
-    }
-  }
-}
-Objects {
   Id: 17319305791525914897
   Name: "Crypts and Caverns"
   Transform {
@@ -779,9 +662,27 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:SpawnPoint"
-      ObjectReference {
-        SelfId: 841534158063459245
+      Name: "cs:PlayerSpawnPoints"
+      AssetReference {
+        Id: 15774260010684342315
+      }
+    }
+    Overrides {
+      Name: "cs:EnemySpawnPoints"
+      AssetReference {
+        Id: 14141410210691162851
+      }
+    }
+    Overrides {
+      Name: "cs:Enemies"
+      AssetReference {
+        Id: 6155012643207420694
+      }
+    }
+    Overrides {
+      Name: "cs:TheCarlosBlade"
+      AssetReference {
+        Id: 4569623632632349897
       }
     }
   }
@@ -807,6 +708,183 @@ Objects {
   }
 }
 Objects {
+  Id: 13697059293714550192
+  Name: "DDPathfindingManager"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17182930257740680113
+      value {
+        Overrides {
+          Name: "Name"
+          String: "DDPathfindingManager"
+        }
+        Overrides {
+          Name: "cs:Debug"
+          Bool: false
+        }
+        Overrides {
+          Name: "cs:VerboseDebug"
+          Bool: false
+        }
+        Overrides {
+          Name: "cs:DefaultPathSearchArea"
+          String: "x=3 y=3 zMin=3 zMax=2"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15258779556375021788
+    }
+  }
+}
+Objects {
+  Id: 8641672724503937371
+  Name: "DDNavMeshGenerator"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 10223134418665528892
+      value {
+        Overrides {
+          Name: "Name"
+          String: "DDNavMeshGenerator"
+        }
+        Overrides {
+          Name: "cs:RemoveIslands"
+          Bool: false
+        }
+        Overrides {
+          Name: "cs:TileSize"
+          Vector {
+            X: 250
+            Y: 250
+            Z: 500
+          }
+        }
+        Overrides {
+          Name: "cs:MaxUnitHeight"
+          Float: 100
+        }
+        Overrides {
+          Name: "cs:AutoStartNavMeshVisualization"
+          Bool: false
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15461767369106101966
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 220
+            Y: 220
+            Z: 16
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9656556991163291496
+    }
+  }
+}
+Objects {
+  Id: 6006621977313898088
+  Name: "Combat Dependencies"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8014650375856875642
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Combat Dependencies"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2300087989511993348
+    }
+  }
+}
+Objects {
   Id: 2252351596957918637
   Name: "Misc"
   Transform {
@@ -824,11 +902,9 @@ Objects {
   ParentId: 4781671109827199097
   ChildIds: 9086936746104183945
   ChildIds: 10005074784157121906
-  ChildIds: 8641672724503937371
-  ChildIds: 13697059293714550192
-  ChildIds: 6006621977313898088
   ChildIds: 7636241833740076853
-  ChildIds: 14350136084699434688
+  ChildIds: 11835868879486743133
+  ChildIds: 17098144578265451547
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -849,7 +925,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14350136084699434688
+  Id: 17098144578265451547
   Name: "Spawn Settings"
   Transform {
     Location {
@@ -878,14 +954,126 @@ Objects {
   }
   Settings {
     RespawnSettings {
-      RespawnDelay: 2
+      RespawnDelay: 10
       RespawnMode_v2 {
-        Value: "mc:erespawnmode:random"
+        Value: "mc:erespawnmode:none"
       }
       StartSpawned: true
       SpawnMode {
         Value: "mc:espawnmode:random"
       }
+    }
+  }
+}
+Objects {
+  Id: 11835868879486743133
+  Name: "Post Process"
+  Transform {
+    Location {
+      Z: 100
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2252351596957918637
+  ChildIds: 16966340303514794983
+  ChildIds: 14022464183113634984
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+}
+Objects {
+  Id: 14022464183113634984
+  Name: "Advanced Bloom Post Process"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11835868879486743133
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6403628407830071757
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 16966340303514794983
+  Name: "Ambient Occlusion Post Process"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11835868879486743133
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Intensity"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14697405062555329113
+    }
+    TeamSettings {
     }
   }
 }
@@ -924,186 +1112,6 @@ Objects {
   }
   NetworkRelevanceDistance {
     Value: "mc:eproxyrelevance:critical"
-  }
-}
-Objects {
-  Id: 6006621977313898088
-  Name: "Combat Dependencies"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2252351596957918637
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8014650375856875642
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Combat Dependencies"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 100
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2300087989511993348
-    }
-  }
-}
-Objects {
-  Id: 13697059293714550192
-  Name: "DDPathfindingManager"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2252351596957918637
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 17182930257740680113
-      value {
-        Overrides {
-          Name: "Name"
-          String: "DDPathfindingManager"
-        }
-        Overrides {
-          Name: "cs:Debug"
-          Bool: true
-        }
-        Overrides {
-          Name: "cs:VerboseDebug"
-          Bool: true
-        }
-        Overrides {
-          Name: "cs:DefaultPathSearchArea"
-          String: "x=3 y=3 zMin=3 zMax=2"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 100
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15258779556375021788
-    }
-  }
-}
-Objects {
-  Id: 8641672724503937371
-  Name: "DDNavMeshGenerator"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2252351596957918637
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 10223134418665528892
-      value {
-        Overrides {
-          Name: "Name"
-          String: "DDNavMeshGenerator"
-        }
-        Overrides {
-          Name: "cs:RemoveIslands"
-          Bool: false
-        }
-        Overrides {
-          Name: "cs:TileSize"
-          Vector {
-            X: 100
-            Y: 100
-            Z: 300
-          }
-        }
-        Overrides {
-          Name: "cs:MaxUnitHeight"
-          Float: 100
-        }
-        Overrides {
-          Name: "cs:AutoStartNavMeshVisualization"
-          Bool: false
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 100
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 15461767369106101966
-      value {
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 220
-            Y: 220
-            Z: 16
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9656556991163291496
-    }
   }
 }
 Objects {

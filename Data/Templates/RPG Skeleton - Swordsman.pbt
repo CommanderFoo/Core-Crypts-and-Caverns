@@ -54,15 +54,15 @@ Assets {
           }
           Overrides {
             Name: "cs:VisionHalfAngle"
-            Float: 85
+            Float: 120
           }
           Overrides {
             Name: "cs:VisionRadius"
-            Float: 2500
+            Float: 4500
           }
           Overrides {
             Name: "cs:HearingRadius"
-            Float: 1000
+            Float: 2000
           }
           Overrides {
             Name: "cs:SearchBonusVision"
@@ -70,15 +70,15 @@ Assets {
           }
           Overrides {
             Name: "cs:SearchDuration"
-            Float: 6
+            Float: 8
           }
           Overrides {
             Name: "cs:PossibilityRadius"
-            Float: 800
+            Float: 1000
           }
           Overrides {
             Name: "cs:ChaseRadius"
-            Float: 4000
+            Float: 8000
           }
           Overrides {
             Name: "cs:AttackRange"
